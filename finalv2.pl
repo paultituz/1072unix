@@ -70,8 +70,9 @@ for($j=0;$j<=$word_count;$j++){
  print "$array->[$j][$i] ";
 }
 print "\n";
+print "correct one ";
 }
 #test corr
-
+# test two 
 
 
