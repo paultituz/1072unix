@@ -1,0 +1,6 @@
+This paper examines EEG signatures due to different color
+stimuli. This problem has potential applications in examining
+psychological response to color and in developping synthetic
+artificial vision systems. Human response to color stimuli has
+effect on human emotions, human reactions in color sensitive
+activities such as games, driving, watching movies, etc. 

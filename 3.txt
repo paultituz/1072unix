@@ -1,0 +1,12 @@
+This paper examines EEG signatures due to different color
+stimuli. This problem has potential applications?.? in examining
+psychological response to color and in developping synthetic
+artificial vision systems. Human response to color stimuli has
+effect on human emotions, human reactions? in color sensitive
+activities such as games, driving, watching movies, etc. The
+specific problem addressed in this study is whether EEG
+signatures can be? reliably used to discern colors. It is assumed
+that this response is dependent on individuals and therefore the
+goal is to discern colors based on EEG responses for one
+individual and not across individuals of various ages, genders,
+and mental states..
