@@ -10,3 +10,4 @@ that this response is dependent on individuals and therefore the
 goal is to discern colors based on EEG responses for one
 individual and not across individuals of various ages, genders,
 and mental states. 
+11 34564 64 654
