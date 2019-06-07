@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w 
 system "touch data.txt";
+system "true >data.txt";
 system "ls in | wc -l > data.txt";
 
 open(data_file,"data.txt");
@@ -7,8 +8,7 @@ $file_count = <data_file>;
 chomp $file_count;
 
 system "touch report.txt";
-system "rm report.txt";
-system "touch report.txt";
+system "true > report.txt";
 open(RE,">> report.txt");
 
 if ($file_count <= 1){
