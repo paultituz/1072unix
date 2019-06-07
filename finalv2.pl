@@ -37,7 +37,7 @@ for ($i=1;$i <= $file_count;$i++){
  while($save = <text_file>){
   chomp $save;
   $save = lc ($save);
-  @word = split(/[ .,?!]+/,$save);
+  @word = split(/[ .,?!":;]+/,$save);
   for($j=0;$j<=$#word;$j++){
    if($word[$j]eq''){
     $j++;
@@ -105,17 +105,23 @@ for($i=1;$i<$file_count;$i++){
  }
 }
 
+$count_output = 0;
 for($i=1;$i<=$file_count;$i++){
  for($j=$i+1;$j<=$file_count;$j++){
    if($result->[$i][$j] eq 1){
     print "$result->[0][$i] and $result->[0][$j] are the same\n";
+    $count_output++;
    }
-   elsif($result->[$i][$j]gt"0.75"){
+   elsif($result->[$i][$j]gt"0.6"){
     $out = int($result->[$i][$j]*100);
     print "$result->[0][$i] and $result->[0][$j] are $out% same\n";
+    $count_output++;
    }
    print RE "$result->[0][$i] $result->[0][$j] $result->[$i][$j]\n";
   }
-}
+ }
+ if ($count_output==0){
+  print "All files similarlity less then 60%\n";
+ }
 }
 
