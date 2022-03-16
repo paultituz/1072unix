@@ -1,3 +1,2 @@
-＃1072unix final project
+＃1072unix programme
 
-about checking plagiarism program
