@@ -1,0 +1,54 @@
+#!/bin/sh
+
+#$alias mybackup -n "$crontab"
+#$alias mybackup -q "$crontab -r"
+
+
+
+user=`whoami`
+currpath=$(cd `dirname $0`;pwd)
+
+if [ ! -d "/home/$user/backup" ];then
+	mkdir /home/$user/backup
+
+fi
+
+
+
+if [ $1="-n" ];then
+	time=`date +"%Y%m%d_%H%M"`
+	filename="$curr_path  $time"
+
+	echo $filename
+	tar zcvf $filename.tgz $currpath
+	mv $filename.tgz /home/$user/backup
+
+elif [ $1="-q"]
+then
+
+	crontab -r
+
+else 
+	echo "error"
+
+fi
+
+#for key in "$@"
+#do
+#	if [ $key = $b ]
+#	then 
+#		"$crontab -r"
+#
+#	elif [ $key -le "-1" -a $key -ge "-59"   ]
+#	then
+#		dou=$key * $key
+#		echo "yes"
+#		echo $dou
+
+#	else 
+#		echo "input error"
+#fi
+
+#done
+
+
