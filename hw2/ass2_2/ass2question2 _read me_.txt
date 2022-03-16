@@ -1,0 +1,47 @@
+ass2question2 "read me"
+
+code:
+{
+
+#!/usr/bin/perl -w
+
+print "Input:\n";
+chomp ( $num = <STDIN> );
+@num = split( //, $num );
+@back = reverse( @num );
+
+$size = @num;
+
+for( $i = 0; $i < $size; $i++ ){
+	if( $num[$i] ne $back[$i] ){
+		$a = "";
+		last;
+		#print"not a palidrome\n";
+	}
+	else{
+		$a = "true";
+		#print"palidrome\n";
+	}
+		
+} 
+
+if( $a ){
+	print "palindrome\n";
+}
+else{
+	print "Not palindrome\n";
+}
+
+
+
+
+
+
+
+}
+
+ouput： 
+程式output 讓使用者輸入，然後判斷是否回文 palidrome/ not palidrome
+
+detail：
+將使用者的輸入放進兩個不同的變數裡，一個正向，一個反向，用for比對正向和反向的第一個以及其餘內容，是否相同，相同代表回文，反之不是。

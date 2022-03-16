@@ -1,0 +1,27 @@
+ass2question3 "read me"
+
+
+code:
+{
+
+#!/usr/bin/perl -w
+
+#@num = (19,23,10,-10,0,-30,51);
+
+chomp ( $num = <STDIN> );
+
+@num = split( /,/, $num);
+
+@sum = sort {$a<=>$b} @num;
+print "@sum\n";
+
+
+
+
+}
+
+ouput： 
+使用者輸入數字，例如19,23,10,-10,0,-30,51。 系統output 排序後的答案
+
+detail：
+將使用者的輸入放進變數裡，用split 將， 分隔開，然後使用內建sort去排列，然後將結果output。

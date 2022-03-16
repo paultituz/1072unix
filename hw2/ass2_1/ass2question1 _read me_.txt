@@ -1,0 +1,17 @@
+ass2question1 read me
+
+code:
+{
+
+#!/usr/bin/perl -w
+
+$a = "Hello Perl!";
+print "$a\n";
+
+
+
+}
+
+ouput：
+
+輸入字串或數字，將會output Hello Perl!。
